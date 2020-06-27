@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentLinear"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/useRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sans"
+                android:buttonTint="@color/black"
+                android:text="Add Registered User as Complainant"
+                android:textSize="@dimen/textsize" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="@string/saluation"
+                app:errorEnabled="true">
+
+
+                <com.example.grievanceregistrationform.CustomFontEditText
+                    android:id="@+id/salutation"
+                    android:fontFamily="@font/sans"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:textColorHint="#c6c6c6"
+                    android:inputType="textCapCharacters"
+                    app:category="@string/selectable"
+                    app:choices="Mr,Ms,Mrs,Dr"
+                    app:tittle="Salutation"
+                    android:textSize="@dimen/textsize" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="@string/name"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/name"
+                    android:fontFamily="@font/sans"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:inputType="textCapCharacters"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="15dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+
+                android:layout_marginRight="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="@string/surname"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/surname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/sans"
+                    android:backgroundTint="@color/gray"
+                    android:textColorHint="#c6c6c6"
+                    android:inputType="textCapCharacters"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcedefghijklmnopqrstuvwxyz "
+                    android:textSize="@dimen/textsize" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:id="@+id/relation"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/sonofRadio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/sof"
+                    android:checked="true"
+                    android:fontFamily="@font/sans"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/textsize" />
+
+                <RadioButton
+                    android:id="@+id/datofRadio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/dof"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sans"
+                    android:textSize="@dimen/textsize" />
+
+                <RadioButton
+                    android:id="@+id/motofRadio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/wof"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/sans"
+                    android:textSize="@dimen/textsize" />
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/parentnameText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="@string/parentName"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/parentname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:textColorHint="#c6c6c6"
+                    android:fontFamily="@font/sans"
+                    android:inputType="textPersonName"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcedefghijklmnopqrstuvwxyz "
+                    android:textSize="@dimen/textsize" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <com.hbb20.CountryCodePicker
+                                android:id="@+id/phonedial"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:ccp_countryPreference="KH,VN,LA,TH,MM"
+                                app:ccp_defaultNameCode="KH"
+                                app:ccp_defaultPhoneCode="855" />
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:hint="@string/mobile"
+                                app:errorEnabled="true">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/mobile"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:backgroundTint="@color/gray"
+                                    android:textColorHint="#c6c6c6"
+
+                                    android:maxLength="10"
+                                    android:inputType="number"
+                                    android:textSize="@dimen/textsize" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="@string/doorNumber"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/doornumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:inputType="textMultiLine"
+                    android:fontFamily="@font/sans"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="15dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:hint="@string/province"
+                app:errorEnabled="true">
+
+                <com.weiwangcn.betterspinner.library.BetterSpinner
+                    android:id="@+id/Province"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@null"
+                    android:background="@null"
+                    android:inputType="textPhonetic"
+                    style="@style/Base.Widget.AppCompat.EditText"
+                    android:fontFamily="@font/sans"
+                    android:paddingLeft="10dp"
+                    android:textSize="@dimen/textsize" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:hint="@string/district"
+                app:errorEnabled="true">
+
+                <com.weiwangcn.betterspinner.library.BetterSpinner
+                    android:id="@+id/district"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@null"
+                    android:background="@null"
+                    android:inputType="textPhonetic"
+                    style="@style/Base.Widget.AppCompat.EditText"
+                    android:fontFamily="@font/sans"
+                    android:paddingLeft="10dp"
+                    android:textSize="@dimen/textsize" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:hint="@string/commune"
+                app:errorEnabled="true">
+
+                <com.weiwangcn.betterspinner.library.BetterSpinner
+                    android:id="@+id/commune"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@null"
+                    android:background="@null"
+                    android:inputType="textPhonetic"
+                    style="@style/Base.Widget.AppCompat.EditText"
+                    android:fontFamily="@font/sans"
+                    android:paddingLeft="10dp"
+                    android:textSize="@dimen/textsize" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:hint="@string/village"
+                app:errorEnabled="true">
+
+                <com.weiwangcn.betterspinner.library.BetterSpinner
+                    android:id="@+id/village"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@null"
+                    android:background="@null"
+                    android:inputType="textPhonetic"
+                    style="@style/Base.Widget.AppCompat.EditText"
+                    android:fontFamily="@font/sans"
+                    android:paddingLeft="10dp"
+                    android:textSize="@dimen/textsize" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/email_auto_complete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="@string/gmail"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"
+                    android:textColorHint="#c6c6c6"
+                    android:inputType="textEmailAddress"
+                    android:selectAllOnFocus="true"
+                    android:fontFamily="@font/sans"
+                    android:textSize="15.0dip" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/cricle_white"
+                    android:layout_gravity="top">
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/addImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:backgroundTint="#002569"
+                        android:elevation="50dp"
+                        android:src="@drawable/ic_mode_edit_black_24dp"
+                        app:tint="@color/white"
+                        app:borderWidth="0dp"
+                        app:fabSize="mini" />
+
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/signImg"
+                    android:visibility="visible"
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

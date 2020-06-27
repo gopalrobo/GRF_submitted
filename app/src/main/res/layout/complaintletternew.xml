@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="top"
+                android:text="Date"
+                android:textSize="18dp" />
+
+            <com.example.grievanceregistrationform.CustomFontEditText
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/gray"
+                android:editable="false"
+                android:inputType="none"
+                android:textColorHint="#ffc6c6c6"
+                android:textSize="18dp"
+                app:category="@string/date" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To Address"
+                android:padding="5dp"
+                android:textSize="16dp"
+                android:layout_gravity="top" />
+
+            <com.example.grievanceregistrationform.CustomFontEditText
+                android:id="@+id/adboffice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:category="@string/selectable"
+                app:choices="Level 1 - Commune,Level 2 - District,Level 3 - Province,Level 4 - National,Level 5 - ADB Country Office,Level 6 - ADB Headquarters"
+                app:tittle="To Address"
+                android:editable="false"
+                android:backgroundTint="#808080"
+                android:textColorHint="#ffc6c6c6"
+                android:textSize="16dp" />
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="top"
+                android:text="Dear Sir"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="top"
+                android:text="We, who have signed this letter, are residents of "
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hint: (Mailing Address Of Complaints)"
+                android:padding="5dp"
+                android:textStyle="italic"
+                android:textSize="16dp"
+                android:layout_gravity="top" />
+
+            <ru.dimorinny.floatingtextbutton.FloatingTextButton
+                android:id="@+id/mailaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:floating_background_color="@color/colorPrimary"
+                android:layout_gravity="center"
+                app:floating_left_icon="@drawable/ic_stat_name"
+                app:floating_title="Add Mailing Address"
+                app:floating_title_color="@android:color/white" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mailaddresslist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:scrollbars="vertical" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="top"
+                android:text="and would like to file a complaint regarding the "
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hint: (Name of Project)"
+                android:padding="5dp"
+                android:textSize="16dp"
+                android:textStyle="italic"
+                android:layout_gravity="top" />
+
+            <com.example.grievanceregistrationform.CustomFontEditText
+                android:id="@+id/projectname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:category="@string/selectable"
+                app:choices="43319-033 : Greater Mekong Subregion Southern Economic Corridor Towns Development Project"
+                app:tittle="Project Name"
+                android:editable="false"
+                android:backgroundTint="#808080"
+                android:textColorHint="#ffc6c6c6"
+                android:textSize="16dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="an ADB-assisted Project. "
+                android:layout_gravity="top"
+                android:textSize="18dp" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="top"
+                android:text="We believe that due to this Project, we have suffered or are likely to suffer the following"
+                android:textSize="18dp" />
+
+
+            <ru.dimorinny.floatingtextbutton.FloatingTextButton
+                android:id="@+id/project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:floating_background_color="@color/colorPrimary"
+                android:layout_gravity="center"
+                app:floating_left_icon="@drawable/ic_stat_name"
+                app:floating_title="Add compliant Detail"
+                app:floating_title_color="@android:color/white" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/projectlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:scrollbars="vertical" />
+
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:text="Do you want your identities to be kept confidential?" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="If there is any representative"
+                android:padding="5dp"
+                android:textSize="16dp"
+                android:layout_gravity="top" />
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/representative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/gray"
+                android:textColorHint="#c6c6c6"
+                android:inputType="text"
+                android:textSize="18dp" />
+
+            <ru.dimorinny.floatingtextbutton.FloatingTextButton
+                android:id="@+id/representativebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:floating_background_color="@color/colorPrimary"
+                android:layout_gravity="center"
+                app:floating_left_icon="@drawable/ic_stat_name"
+                android:visibility="gone"
+                app:floating_title="Add representative"
+                app:floating_title_color="@android:color/white" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/representativelist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:scrollbars="vertical" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="top"
+                android:text="Please see below our other contact details"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Email"
+                android:layout_gravity="top"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/emailid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/gray"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#ffc6c6c6"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Telephone"
+                android:layout_gravity="top"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <com.hbb20.CountryCodePicker
+                                android:id="@+id/phonedial"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:ccp_countryPreference="KH,VN,LA,TH,MM"
+                                app:ccp_defaultNameCode="KH"
+                                app:ccp_defaultPhoneCode="855" />
+
+                            <EditText
+                                android:id="@+id/telephone1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:backgroundTint="@color/gray"
+                                android:textColorHint="#c6c6c6"
+                                android:hint="Telephone"
+                                android:inputType="number"
+                                android:maxLength="10"
+                                android:textSize="@dimen/textsize" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="top"
+                android:text="Sincerely"
+                android:textSize="18dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/signlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:scrollbars="vertical" />
+
+            <EditText
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/gray"
+                android:editable="false"
+                android:inputType="text"
+                android:maxLength="10"
+                android:textColorHint="#ffc6c6c6"
+                android:textSize="18dp"
+                android:visibility="gone" />
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Descript"
+                android:layout_gravity="top"
+                android:textSize="18dp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/descript"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/gray"
+                android:editable="false"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:textColorHint="#ffc6c6c6"
+                android:textSize="18dp"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:letterSpacing="0.2"
+                android:padding="12dp"
+                android:text="SUBMIT"
+                android:textColor="#fff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

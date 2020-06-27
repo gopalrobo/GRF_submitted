@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <info.abdolahi.CircularMusicProgressBar
+                android:id="@+id/addImage"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:src="@drawable/addimage"
+                app:border_color="@color/viewBg"
+                app:border_width="4dp"
+                app:centercircle_diammterer="100"
+                app:draw_anticlockwise="false"
+                app:progress_color="@color/colorPrimary"
+                app:enable_touch="true"
+                app:progress_startAngle="-90" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/outline_location_on_white_24dp"
+                    android:tint="#B3000000" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/geotagInput"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:hint="Geotag"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/geotag"
+                        android:fontFamily="@font/sans"
+                        android:enabled="false"
+                        android:textColor="@color/textview_colors"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ImageView
+                    android:id="@+id/refresh"
+                    android:layout_width="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="24dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/ic_refresh_black_24dp"
+                    android:tint="#B3000000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/outline_description_white_48dp"
+                    android:tint="#B3000000" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:hint="Description"
+                    android:id="@+id/descriptionInput"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/description"
+                        android:inputType="textMultiLine"
+                        android:fontFamily="@font/sans"
+                        android:enabled="false"
+                        android:textColor="@drawable/disabled_color"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="24dp"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="invisible"
+                    android:src="@drawable/ic_refresh_black_24dp"
+                    android:tint="#B3000000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_clear_all_black_24dp"
+                    android:tint="#B3000000" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/typelayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:hint="Type"
+                    app:errorEnabled="true">
+
+                    <com.weiwangcn.betterspinner.library.BetterSpinner
+                        android:id="@+id/type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@null"
+                        android:background="@null"
+                        style="@style/Base.Widget.AppCompat.EditText"
+                        android:fontFamily="@font/sans"
+                        android:singleLine="false"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="10dp"
+                        android:textSize="@dimen/textsize" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="24dp"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="invisible"
+                    android:src="@drawable/ic_refresh_black_24dp"
+                    android:tint="#B3000000" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

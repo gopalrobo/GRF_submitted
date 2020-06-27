@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card"
+        android:layout_marginBottom="5dp"
+        android:elevation="10dp"
+        android:foreground="?attr/selectableItemBackground">
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/sampleLetter"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="top"
+                android:text="@string/datekh"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/gray"
+                android:editable="false"
+                android:inputType="none"
+                android:textColorHint="#ffc6c6c6"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/toaddress"
+                android:padding="5dp"
+                android:textSize="16dp"
+                android:layout_gravity="top" />
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/adboffice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/gray"
+                android:textColorHint="#c6c6c6"
+                android:inputType="text"
+                android:textSize="18dp" />
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="top"
+                android:text="@string/dearsir"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="top"
+                android:text="@string/signed"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mailhint"
+                android:padding="5dp"
+                android:textStyle="italic"
+                android:textSize="16dp"
+                android:layout_gravity="top" />
+
+            <ru.dimorinny.floatingtextbutton.FloatingTextButton
+                android:id="@+id/mailaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:floating_background_color="@color/colorPrimary"
+                android:layout_gravity="center"
+                app:floating_left_icon="@drawable/ic_stat_name"
+                app:floating_title="@string/addMailingaddress"
+                app:floating_title_color="@android:color/white" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mailaddresslist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:scrollbars="vertical" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="top"
+                android:text="@string/compliantRegarding"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/projecthint"
+                android:padding="5dp"
+                android:textSize="16dp"
+                android:textStyle="italic"
+                android:layout_gravity="top" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <com.example.grievanceregistrationform.CustomFontEditText
+                android:id="@+id/projectname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:category="@string/selectable"
+                android:layout_weight="0.3"
+                app:choices="43319-033 : Greater Mekong Subregion Southern Economic Corridor Towns Development Project"
+                app:tittle="Project Name"
+                android:editable="false"
+                android:backgroundTint="#808080"
+                android:textColorHint="#ffc6c6c6"
+                android:textSize="16dp" />
+            <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_weight="1.3"
+                 android:gravity="center"
+                 android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/url"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:padding="3dp"
+                    android:rotation="90"
+                    android:src="@drawable/ic_open_in_browser_black_24dp"
+                    android:tint="@color/colorPrimary" />
+</LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/adbproject"
+                android:layout_gravity="top"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="top"
+                android:text="@string/duethis"
+                android:textSize="18dp" />
+
+            <com.example.grievanceregistrationform.CustomFontEditText
+                android:id="@+id/suffer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:category="@string/selectable"
+                app:choices="We have suffered,Are likely to suffer the following"
+                app:tittle="Reason"
+                android:editable="false"
+                android:backgroundTint="#808080"
+                android:textColorHint="#ffc6c6c6"
+                android:textSize="16dp" />
+
+
+            <ru.dimorinny.floatingtextbutton.FloatingTextButton
+                android:id="@+id/project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:floating_background_color="@color/colorPrimary"
+                android:layout_gravity="center"
+                app:floating_left_icon="@drawable/ic_stat_name"
+                app:floating_title="@string/compliantDetail"
+                app:floating_title_color="@android:color/white" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/projectlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:scrollbars="vertical" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:layout_weight="0.7"
+                    android:textSize="16dp"
+                    android:layout_gravity="top"
+                    android:text="@string/keptConfidential" />
+            <com.github.angads25.toggle.widget.LabeledSwitch
+                android:id="@+id/confidential"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:layout_weight="1.3"
+                android:textSize="14sp"
+                app:on="false"
+                app:textOn="@string/yes"
+                app:textOff="@string/no"
+                app:colorOn="#27C52C"
+                app:colorOff="#ffffff"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/representative"
+                android:padding="5dp"
+                android:textSize="16dp"
+                android:layout_gravity="top" />
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/representative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/gray"
+                android:textColorHint="#c6c6c6"
+                android:inputType="text"
+                android:textSize="18dp" />
+
+            <ru.dimorinny.floatingtextbutton.FloatingTextButton
+                android:id="@+id/representativebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:floating_background_color="@color/colorPrimary"
+                android:layout_gravity="center"
+                app:floating_left_icon="@drawable/ic_stat_name"
+                app:floating_title="@string/addRep"
+                android:visibility="gone"
+                app:floating_title_color="@android:color/white" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/representativelist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:scrollbars="vertical" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="top"
+                android:text="@string/contactDetail"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/email"
+                android:layout_gravity="top"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/emailid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/gray"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#ffc6c6c6"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/telephone"
+                android:layout_gravity="top"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <com.hbb20.CountryCodePicker
+                                android:id="@+id/phonedial"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:ccp_countryPreference="KH,VN,LA,TH,MM"
+                                app:ccp_defaultNameCode="KH"
+                                app:ccp_defaultPhoneCode="855" />
+
+                            <EditText
+                                android:id="@+id/telephone1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:backgroundTint="@color/gray"
+                                android:textColorHint="#c6c6c6"
+                                android:hint="@string/telephone"
+                                android:inputType="number"
+                                android:maxLength="10"
+                                android:textSize="@dimen/textsize" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="top"
+                android:text="@string/sincerely"
+                android:textSize="18dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/signlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:scrollbars="vertical" />
+
+            <EditText
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/gray"
+                android:editable="false"
+                android:inputType="text"
+                android:maxLength="10"
+                android:textColorHint="#ffc6c6c6"
+                android:textSize="18dp"
+                android:visibility="gone" />
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Descript"
+                android:layout_gravity="top"
+                android:textSize="18dp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/descript"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/gray"
+                android:editable="false"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:textColorHint="#ffc6c6c6"
+                android:textSize="18dp"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:letterSpacing="0.2"
+                android:padding="12dp"
+                android:text="@string/submit"
+                android:textColor="#fff"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

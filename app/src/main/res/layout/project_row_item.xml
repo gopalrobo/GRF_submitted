@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:paddingBottom="@dimen/row_padding"
+    android:paddingLeft="@dimen/activity_margin"
+    android:paddingRight="@dimen/activity_margin"
+    android:paddingTop="@dimen/row_padding">
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="@dimen/thumbnail"
+        android:layout_height="@dimen/thumbnail"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/row_padding" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/thumbnail"
+        android:fontFamily="@font/sans"
+        android:text="text"
+        android:textColor="@color/contact_name"
+        android:textSize="@dimen/contact_name" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_toRightOf="@id/thumbnail"
+        android:fontFamily="@font/sans"
+        android:text="text"
+        android:textColor="@color/contact_number"
+        android:textSize="@dimen/contact_number" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="right"
+        android:layout_below="@+id/phone"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/howtoApply"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ic_search_black_24dp"
+            style="@style/Widget.App.Button.OutlinedButton.IconOnly" />
+
+        <Button
+            android:id="@+id/source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            app:icon="@drawable/ic_open_in_browser_black_24dp"
+            style="@style/Widget.App.Button.OutlinedButton.IconOnly" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

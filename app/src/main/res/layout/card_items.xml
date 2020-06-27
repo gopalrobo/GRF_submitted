@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:showIn="@layout/booking_time_vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textviewLayout"
+        android:paddingStart="8dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_below="@+id/list_item_genre_icon"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:paddingBottom="0.5dp"
+            android:paddingTop="0.5dp"
+            android:textColor="@color/colorPrimary"
+            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/rectangle_red"
+            android:text="PLANNING" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_below="@+id/list_item_genre_icon"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:background="@color/colorPrimary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/contentLayout"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="1dp"
+            android:paddingEnd="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingStart="8dp"
+            android:paddingTop="1dp"
+            android:textColor="#000"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            tools:text="@string/clientAddress" />
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="1dp"
+            android:paddingEnd="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingStart="8dp"
+            android:paddingTop="1dp"
+            tools:text="@string/clientName" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_status_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="1dp"
+        android:visibility="gone"
+        android:paddingEnd="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingStart="8dp"
+        android:paddingTop="1dp"
+        tools:text="Client name" />
+
+
+
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingBottom="1dp"
+        android:paddingEnd="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingStart="8dp"
+        android:paddingTop="1dp"
+        tools:text="@string/clientAddress" />
+    <LinearLayout
+        android:id="@+id/drLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="1dp"
+        android:paddingEnd="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingStart="8dp"
+        android:paddingTop="1dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            />
+        <TextView
+            android:id="@+id/dr_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:visibility="visible"
+            tools:text="@string/drivername" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <ru.dimorinny.floatingtextbutton.FloatingTextButton
+            android:id="@+id/donebtn"
+            android:layout_width="wrap_content"
+            android:visibility="visible"
+            android:layout_height="wrap_content"
+            app:floating_background_color="@color/colorPrimary"
+            app:floating_left_icon="@drawable/ic_done_black_24dp"
+            app:floating_title=""
+            app:floating_title_color="@android:color/white" />
+
+        <ru.dimorinny.floatingtextbutton.FloatingTextButton
+            android:id="@+id/cashbtn"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            app:floating_background_color="@color/colorPrimary"
+            app:floating_left_icon="@drawable/rupee"
+            app:floating_title=""
+            app:floating_title_color="@android:color/white" />
+
+        <ru.dimorinny.floatingtextbutton.FloatingTextButton
+            android:id="@+id/cancelbtn"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            app:floating_background_color="@color/colorPrimary"
+            app:floating_left_icon="@drawable/ic_cancel_black_24dp"
+            app:floating_title=""
+            app:floating_title_color="@android:color/white" />
+
+
+        <ru.dimorinny.floatingtextbutton.FloatingTextButton
+            android:id="@+id/callbtn"
+            android:layout_width="wrap_content"
+            android:visibility="visible"
+            android:layout_height="wrap_content"
+            app:floating_background_color="@color/colorPrimary"
+            app:floating_left_icon="@drawable/ic_call_black_24dp"
+            app:floating_title=""
+            app:floating_title_color="@android:color/white" />
+
+        <ru.dimorinny.floatingtextbutton.FloatingTextButton
+            android:id="@+id/reportbtn"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            app:floating_background_color="@color/colorPrimary"
+            app:floating_left_icon="@drawable/ic_report_black_24dp"
+            app:floating_title=""
+            app:floating_title_color="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>

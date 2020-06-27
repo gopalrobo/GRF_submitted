@@ -1,0 +1,15 @@
+int attr clearOnDoubleClick 0x7f040001
+int attr penColor 0x7f040002
+int attr penMaxWidth 0x7f040003
+int attr penMinWidth 0x7f040004
+int attr velocityFilterWeight 0x7f040005
+int id dataBinding 0x7f0c0001
+int id onAttachStateChangeListener 0x7f0c0002
+int id onDateChanged 0x7f0c0003
+int id textWatcher 0x7f0c0004
+int[] styleable SignaturePad { 0x7f040001, 0x7f040002, 0x7f040003, 0x7f040004, 0x7f040005 }
+int styleable SignaturePad_clearOnDoubleClick 0
+int styleable SignaturePad_penColor 1
+int styleable SignaturePad_penMaxWidth 2
+int styleable SignaturePad_penMinWidth 3
+int styleable SignaturePad_velocityFilterWeight 4

@@ -1,0 +1,11 @@
+com.github.gcacace.signaturepad
+attr clearOnDoubleClick
+attr penColor
+attr penMaxWidth
+attr penMinWidth
+attr velocityFilterWeight
+id dataBinding
+id onAttachStateChangeListener
+id onDateChanged
+id textWatcher
+styleable SignaturePad clearOnDoubleClick penColor penMaxWidth penMinWidth velocityFilterWeight

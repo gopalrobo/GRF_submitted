@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerImages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:visibility="gone" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/receiptLinear"
+        android:layout_below="@+id/recyclerImages"
+        android:layout_marginTop="2dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/paidFirstLayout"
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_gravity="center"
+                        android:layout_height="40dp"
+                        android:src="@drawable/adb" />
+
+                    <TextView
+                        android:id="@+id/receipt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/adbcompliant"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="25dp"
+                        android:textColor="#000" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="3dp"
+                    android:layout_gravity="center"
+                    android:background="#26A69A" />
+
+                <TextView
+                    android:id="@+id/chcName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/level"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:textSize="19dp"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/chcAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cambodia"
+                    android:textSize="11dp"
+                    android:gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:textColor="#000" />
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:background="#FF5722" />
+
+                <TextView
+                    android:id="@+id/farmerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#000" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/mailaddresslist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:scrollbars="vertical" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/paidSecondLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="right"
+        android:visibility="gone"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/gstTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="GST 5% (₹25) inclusive\nTotal Amout Paid: (Cashless)"
+            android:layout_gravity="center"
+            android:gravity="bottom"
+            android:textSize="12dp"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/totaltxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text=" ₹50,000"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|end"
+            android:paddingEnd="5dp"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:textColor="#000" />
+
+        <ru.dimorinny.floatingtextbutton.FloatingTextButton
+            android:id="@+id/receiptBtn"
+            android:layout_width="wrap_content"
+            android:visibility="visible"
+            android:layout_height="wrap_content"
+            app:floating_background_color="@color/colorPrimary"
+            app:floating_left_icon="@drawable/ic_print_black_24dp"
+            app:floating_title=""
+            app:floating_title_color="@android:color/white" />
+    </LinearLayout>
+
+
+</RelativeLayout>

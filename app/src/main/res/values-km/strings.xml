@@ -1,0 +1,138 @@
+<resources>
+    <string name="app_name">GRF6</string>
+    <string name="select">ជ្រើសរើស</string>
+    <string name="enter">Enter</string>
+    <string name="selectable">selectable</string>
+    <string name="multiSselectable">multi selectable</string>
+    <string name="date">date</string>
+    <string name="text_khmer" translatable="false">ភាសាខ្មែរ</string>
+    <string name="text_english" translatable="false">English</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="mobileNumber" translatable="false">Mobile Number</string>
+    <string name="agreement">ហត្ថលេខា\n(ប្រើម្រាមដៃដើម្បីចុះហត្ថលេខាលើអេក្រង់)</string>
+    <string name="clear_pad">Clear Pad</string>
+    <string name="save_signature">Save Signature</string>
+
+    <string name="grf">GRF</string>
+    <string name="login">ចូលទៅកាន់</string>
+    <string name="oneTouch">ភាសាខ្មែរ</string>
+    <string name="or">ឬ</string>
+    <string name="mobile">លេខទូរស័ព្ទ</string>
+    <string name="password">លេខសម្ងាត់</string>
+    <string name="register">ចុះឈ្មោះ</string>
+    <string name="forgotPassword">ភ្លេចលេខសម្ងាត់</string>
+
+    <string name="saluation">ស្វាគមន៍</string>
+    <string name="name">ឈ្មោះ</string>
+    <string name="surname">នាមត្រកូល</string>
+    <string name="sof">កូនប្រុសនៃ</string>
+    <string name="dof">កូនស្រីនៃ</string>
+    <string name="wof">ប្រពន្ធនៃ</string>
+    <string name="parentName">ឈ្មោះឳពុកម្តាយ&amp;នាមត្រកូល</string>
+    <string name="position">តួនាទី</string>
+    <string name="doorNumber">ផ្ទះលេខ</string>
+    <string name="province">ខេត្ត</string>
+    <string name="district">ស្រុក</string>
+    <string name="commune">ឃុំ</string>
+    <string name="village">ភូមិ</string>
+    <string name="gmail">អ៊ីម៉ែល</string>
+    <string name="confirmPassword">បញ្ជាក់លេខសម្ងាត់</string>
+    <string name="submit">ដាក់ស្នើ</string>
+
+    <string name="datekh">កាលបរិច្ឆេទ</string>
+    <string name="office">ការិយាល័យ</string>
+    <string name="grmlevel">GRM Level</string>
+    <string name="projectName">គម្រោង ឈ្មោះ</string>
+    <string name="status">ស្ថានភាព</string>
+    <string name="submitted">បញ្ជូន</string>
+    <string name="view">ពិនិត្យមើល</string>
+    <string name="edit">កែតម្រូវ</string>
+    <string name="print">ថតចម្លង</string>
+    <string name="feedback">ផ្តល់យោបល់ត្រឡប់</string>
+
+    <string name="viewform">ទម្រង់ពិនិត្យមើល</string>
+    <string name="complaintletter">Complaint Letter</string>
+    <string name="newcomplaint">New Complaint</string>
+    <string name="sampleLetter">គំរូលិខិតបណ្តឹងតវ៉ា</string>
+    <string name="toaddress">ទៅកាន់អាស័យដ្ឋាន</string>
+    <string name="dearsir">សូមគោរពជូន</string>
+    <string name="signed">យើង, ដែលបានចុះហត្ថលេខាក្នុងលិខិតនេះ, រស់នៅ​</string>
+    <string name="mailhint">អាស័យដ្ឋានប្រអប់សំបុត្ររបស់ដើមបណ្តឹងតវ៉ា</string>
+    <string name="addMailingaddress">បន្ថែមអាសយដ្ឋានសំបុត្រ</string>
+    <string name="compliantDetail">បន្ថែមព័ត៌មានលំអិត</string>
+    <string name="compliantRegarding">នឹងធ្វើការតវ៉ាចំពោះ</string>
+    <string name="projecthint">ព័ត៌ជំនួយ៖ ឈ្មោះគម្រោង</string>
+    <string name="adbproject">គម្រោងដែលគាំទ្រដោយធនាគារអភិវឌ្ឍន៍អាស៊ី</string>
+    <string name="duethis">យើងជឿជាក់ថាដោយសារតែគម្រោងនេះយើងបានរងគ្រោះ ឬនឹងទទួលរងនូវបញ្ហាដូចខាងក្រោម</string>
+    <string name="keptConfidential">តើអ្នកចង់អោយអត្តសញ្ញាណរបស់អ្នកត្រូវបានរក្សាការសម្ងាត់?</string>
+    <string name="representative">ប្រសិនបើមានអ្នកតំណាង</string>
+    <string name="addRep">បន្ថែមអ្នកតំណាង</string>
+    <string name="contactDetail">សូមមើលព័ត៌មានទំនាក់ទំនងផ្សេងទៀត</string>
+    <string name="email">អ៊ីម៉ែល</string>
+    <string name="telephone">លេខទូរស័ព្ទ</string>
+    <string name="yes">បាទ</string>
+    <string name="no">ទេ</string>
+    <string name="sincerely">Sincerely,</string>
+
+    <string name="useRegister">Use Register as Compliant</string>
+    <string name="sno">S. No.</string>
+
+    <string name="attach">ភ្ជាប់ព័ត៌មានគម្រោង</string>
+    <string name="mateialhint">រាយនាមបញ្ហាផ្ទាល់ និងសម្ភារដែលប៉ះពាល់ដោយគម្រោងចំពោះអ្នកប្តឹងតវ៉ា</string>
+    <string name="geotag">ជីអូថេក</string>
+    <string name="description">ពិពណ៌នា</string>
+    <string name="cancel">បោះបង់</string>
+    <string name="relationName">ឈ្មោះទំនាន់ទំនង</string>
+    <string name="personName">ឈ្មោះ</string>
+
+    <string name="signature">ហត្ថលេខា</string>
+
+    <string name="account">យន្តការគណនេយ្យភាព</string>
+    <string name="compliantForm">ទម្រង់បណ្តឹងតវ៉ា</string>
+    <string name="choicefunction">ជម្រើស</string>
+    <string name="problemSolving">ដំណោះស្រាយបញ្ហា ឬការត្រួតពិនិត្យលើអនុលោម (ជ្រើសរើស១)</string>
+    <string name="facilitator">អ្នកសម្របសម្រួលគម្រោង</string>
+    <string name="assists">សម្រាប់ការដោះស្រាយបញ្ហា (ជួយដល់អ្នកដែលរងគ្រោះដោយផ្ទាល់ និងសម្ភារៈដែលប្រឈមការគម្រាមកំហែង ឬទំនងនឹងប៉ះពាល់ដោយគម្រោងគាំទ្រដោយធនាគារអភិវឌ្ឍន៍អាស៊ី ដោយដោះស្រាយតាមរយៈវិធីសាស្រ្តក្រៅផ្លូវការ អាចបទបែនបាន និង ផ្អែកលើការព្រមព្រៀង និងឯកភាពគ្នាដែលមានកាចូលរួមទទួលស្គាល់ពីគ្រប់ភាគីពាក់ព័ន្ធ)</string>
+    <string name="reviewpanel">គណៈកម្មាធិការដោះស្រាយបណ្តឹងតវ៉ា</string>
+    <string name="review">សម្រាប់ការពិនិត្យឡើងវិញនៃអនុលោម(ស៊ើបអង្កេតលើការមិនប្រតិបត្តិតាមអនុលោមដោយធនាគារអភិវឌ្ឍន៍អាស៊ីជាមួយនិងគោលនយោបាយ និងនីតិវិធីប្រតិបត្តិការក្នុងការរៀនចំគម្រោងផ្សេងៗដែលគាំទ្រដោយធនាគារអភិវឌ្ឍន៍អាស៊ី ឬការអនុវត្តគម្រោងដែលប៉ះពាល់ផ្ទាល់ សម្ភារៈ និងផលប៉ះពាល់យ៉ាងធ្ងន់ធ្ងរឬទំនងជាប៉ះពាល់ដល់ ប្រជាជនក្នុងមូលដ្ឋានក៏ដូចជាការតាមដាននូវការអនុវត្តដំណោះស្រាយបញ្ហាគម្រាមកំហែង ឬទំនងនឹងគម្រាមកំហែងដែលបណ្តាលមកពីការមិនប្រតិបត្តិទៅតាមអនុលោម)</string>
+    <string name="confidentiality">ការសម្ងាត់</string>
+    <string name="compliants">ដើមបណ្តឹងតវ៉ា</string>
+    <string name="anonymoushint">ជំនួយ៖ (ពាក្យបណ្តឹងអនាមិកនឹងមិនត្រូវបានទទួលយកទេ។ យ៉ាងហោចណាស់មានដើមបណ្តឹងតវ៉ាចំនួន ២នាក់រងផលប៉ះពាល់ពីគម្រោង។)</string>
+    <string name="authorized">អ្នកតំណាង ឬជំនួយការ​(ប្រសិនបើមានច្រើន)</string>
+    <string name="information">ព័ត៌ជំនួយ៖ (ព័ត៌មានទាក់ទងនឹងអ្នកតំណាង ឬអ្នកដែលជួយដើមបណ្តឹងតវ៉ាក្នុងការដាក់ពាក្យបណ្តឹងនឹងត្រូវបានបើកចំហរ លើកលែងតែពួកគេជាដើមបណ្តឹងតវ៉ាដែរ និងស្នើសុំអោយរក្សាការសម្ងាត់។)</string>
+    <string name="project">គម្រោង</string>
+    <string name="brief">ពិពណ៌នាសង្ខេប</string>
+    <string name="direct">តើអ្វីខ្លះ និងសម្ភារៈដែលបានប៉ះពាល់ដោយគម្រោងដែលគាំទ្រដោយធនាគារអភិវឌ្ឍន៍អាស៊ី ឬទំនងនឹងប៉ះពាល់ដល់ដើមបណ្តឹងតវ៉ា?</string>
+    <string name="efforts">តើដើមបណ្តឹងតវ៉ាបានព្យាយាមពីមុនដោះបញ្ហា និងបញ្ហានានាជាមួយផ្នែកប្រតិបត្តិការរបស់ធនាគារអភិវឌ្ឍន៍អាស៊ីរួមទាំងបេសសកម្មជនដែលពាក់ព័ន្ធដែរឬទេ?</string>
+    <string name="provide">ព័ត៌មានជំនួយ: បើបាទ / ចាស, សូមផ្តល់ព័ត៌មានដូចខាងក្រោម៖ ពេលណា ដោះស្រាយយ៉ាងមេច ដោយអ្នកណា និងជាមួយអ្នកណាខ្លះ។ សូមពិពណ៌នាចម្លើយផ្សេងរបស់ដើមបណ្តឹងតវ៉ាដែលអាចបានទទួលពី​ឬដំណាះស្រាយនានាពីធនាគារអភិវឌ្ឍន៍អាស៊ី។</string>
+    <string name="optionalInfo">ព័ត៌មានស្តីពីការអនុវត្ត</string>
+    <string name="desiredRemedy">តើអ្វីទៅជាលទ្ធផល ឬសំណងដែលដើមបណ្តឹងតវ៉ាចង់បាន?</string>
+    <string name="anythingAdd">តើមានអ្វីខ្លះទៀតដែលអ្នកចង់បន្ថែម?</string>
+    <string name="perNameComplete">ឈ្មោះអ្នកដែលបំពេញទម្រង់នេះ</string>
+
+    <string name="adbcompliant">មណ្តឹងតវ៉ានឹងធនាគារអភិវឌ្ឍន៍អាស៊ី</string>
+    <string name="level">កំរិតទី ១ ថ្នាក់ឃុំ</string>
+    <string name="cambodia">ប្រទេសកម្ពុជា</string>
+    <string name="compliantAddress">អាស័យដ្ឋាននៃបណ្តឹង</string>
+    <string name="help">ត្រូវការជំនួយ</string>
+    <string name="timeline">ពេលវេលា</string>
+
+    <string name="clientAddress">អាស័យដ្ឋានអតិថិជន</string>
+    <string name="drivername">ឈ្មះអ្នកបើកបរ</string>
+    <string name="clientName">ឈ្មោះអតិថិជន</string>
+
+    <string name="staffreg">បុគ្គលិកដែលចុះឈ្មោះ</string>
+    <string name="compReg">Compliant Registration</string>
+    <string name="complist">បញ្ជីរពាក្យបណ្តឹង</string>
+    <string name="comprecipt">បណ្តឹងតវ៉ាបានទទួល</string>
+
+    <string name="projectDetails">ឈ្មោះគម្រោងលំអិត</string>
+    <string name="imagename">ឈ្មោះរូបភាព</string>
+
+    <string name="mr">លោក</string>
+    <string name="ms">អ្នកនាង</string>
+    <string name="mrs">លោកស្រី</string>
+    <string name="dr">បណ្ឌិត</string>
+    <string name="selectkh">ជ្រើសរើស</string>
+
+</resources>

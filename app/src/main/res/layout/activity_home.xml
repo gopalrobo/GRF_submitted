@@ -1,347 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/ll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fcfcfc"
-    android:gravity="center"
     android:orientation="vertical"
-    android:padding="10dp">
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/machinedetailImg"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:src="@drawable/adb"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="  Grievance Registration"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/questionnaire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:elevation="4dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/cardview_image1"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="18dp"
+
+                android:src="@drawable/form" />
+
+            <TextView
+                android:id="@+id/cardview_list_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/cardview_image1"
+                android:paddingBottom="5dp"
+                android:layout_marginTop="20dp"
+                android:text="Complaint Form"
+                android:gravity="center"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/householdDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:elevation="4dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/cardview_image3"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="18dp"
+                android:src="@drawable/letter" />
+
+            <TextView
+                android:id="@+id/cardview_list_title3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/cardview_image3"
+                android:paddingBottom="5dp"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Sample Complaint Letter"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="5dp"
-        android:text="DMS Questionnaire"
-        android:textSize="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:letterSpacing="0.2"
+        android:padding="12dp"
+        android:text="SUBMIT"
+        android:textColor="#fff"
         android:textStyle="bold" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:clipToPadding="false"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <android.support.v7.widget.CardView
-            android:id="@+id/questionnaire"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_margin="3dp"
-            android:clickable="true"
-            android:foreground="?android:attr/selectableItemBackground">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="3dp">
-
-                <ImageView
-                    android:layout_width="43dp"
-                    android:layout_height="41dp"
-                    android:padding="5dp"
-                    android:src="@drawable/questionnaire" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
-                    android:text="Questionnaire"
-                    android:gravity="center"
-                    android:textSize="15dp" />
-
-
-
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-
-        <android.support.v7.widget.CardView
-            android:id="@+id/householdDate"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_margin="3dp"
-            android:clickable="true"
-            android:foreground="?android:attr/selectableItemBackground">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="3dp">
-
-                <ImageView
-                    android:layout_width="43dp"
-                    android:layout_height="41dp"
-                    android:padding="5dp"
-                    android:src="@drawable/hoselhold" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
-                    android:gravity="center"
-                    android:text="1.Household Data"
-                    android:textSize="15dp" />
-
-
-
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:clipToPadding="false"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <android.support.v7.widget.CardView
-            android:id="@+id/affectedLand"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_margin="3dp"
-            android:clickable="true"
-            android:foreground="?android:attr/selectableItemBackground">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="3dp">
-
-                <ImageView
-                    android:layout_width="55dp"
-                    android:layout_height="45dp"
-                    android:padding="5dp"
-                    android:src="@drawable/tree" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
-                    android:gravity="center"
-                    android:text="2. Affected Land,Crops and Trees"
-                    android:textSize="15dp" />
-
-
-
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-
-        <android.support.v7.widget.CardView
-            android:id="@+id/affectedStructure"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_margin="3dp"
-            android:clickable="true"
-            android:foreground="?android:attr/selectableItemBackground">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="3dp">
-
-                <ImageView
-                    android:layout_width="43dp"
-                    android:layout_height="41dp"
-                    android:padding="5dp"
-                    android:src="@drawable/structure" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
-                    android:gravity="center"
-                    android:text="3. Affected Structure"
-                    android:textSize="15dp" />
-
-
-
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:clipToPadding="false"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <android.support.v7.widget.CardView
-            android:id="@+id/otherLivelihood"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_margin="3dp"
-            android:clickable="true"
-            android:foreground="?android:attr/selectableItemBackground">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:padding="3dp"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="43dp"
-                    android:layout_height="41dp"
-                    android:padding="5dp"
-                    android:src="@drawable/livelihood" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
-                    android:gravity="center"
-                    android:text="4.OtherLivelihood Impact"
-                    android:textSize="15dp"/>
-
-
-
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-
-        <android.support.v7.widget.CardView
-            android:id="@+id/resettlementOption"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_margin="3dp"
-            android:clickable="true"
-            android:foreground="?android:attr/selectableItemBackground">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:padding="3dp"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="43dp"
-                    android:layout_height="41dp"
-                    android:padding="5dp"
-                    android:src="@drawable/resettlement" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
-                    android:gravity="center"
-                    android:text="5. Resettlement Option"
-                    android:textSize="15dp" />
-
-
-
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:clipToPadding="false"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <android.support.v7.widget.CardView
-            android:id="@+id/participants"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_margin="3dp"
-            android:clickable="true"
-            android:foreground="?android:attr/selectableItemBackground">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="43dp"
-                    android:layout_height="41dp"
-                    android:padding="5dp"
-                    android:src="@drawable/participats" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
-                    android:text="Participants"
-                    android:textSize="15dp"/>
-
-
-
-
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
-            android:id="@+id/singlePageSurvey"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_margin="3dp"
-            android:clickable="true"
-            android:foreground="?android:attr/selectableItemBackground">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="43dp"
-                    android:layout_height="44dp"
-                    android:padding="5dp"
-                    android:src="@drawable/participats" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
-                    android:text="Single Page Survey"
-                    android:textSize="15dp"/>
-
-
-
-
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-
-    </LinearLayout>
-
-    <ru.dimorinny.floatingtextbutton.FloatingTextButton
-        android:id="@+id/submit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        app:floating_background_color="@color/black"
-        app:floating_left_icon="@drawable/ic_done_all_black_24dp"
-        app:floating_title="SUBMIT"
-        app:floating_title_color="@android:color/white" />
 </LinearLayout>

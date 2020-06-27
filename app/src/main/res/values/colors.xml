@@ -2,8 +2,9 @@
 <resources>
     <color name="colorPrimary">#002569</color>
     <color name="colorPrimaryDark">#002569</color>
-    <color name="colorAccent">#ffd50000</color>
+    <color name="colorAccent">#002569</color>
 
+    <color name="colorPrimaryLite">#053080</color>
     <color name="viewBg">#f1f5f8</color>
     <color name="white">#fff</color>
 
@@ -13,4 +14,17 @@
     <color name="black">#000000</color>
     <color name="blueGray">#ffab00</color>
     <color name="colortint">#ffd50000</color>
+    <color name="greenafi">#007a36</color>
+    <color name="soft_grey">#ECEEEF</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <color name="colorActiveItem">#4400a59c</color>
+    <color name="jaguar">#232237</color>
+    <color name="contact_name">#333333</color>
+    <color name="contact_number">#8c8c8c</color>
+
+    <color name="chip">#159F5C</color>
+    <color name="chipLite">#E9F8F0</color>
+    <color name="grayLight">#F6F5F5</color>
+
 </resources>

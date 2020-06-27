@@ -1,14 +1,16 @@
 apply plugin: 'com.android.application'
+apply plugin: 'maven'
 
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.example.arthi.dmssmartapp"
+        applicationId "com.example.grievanceregistrationform"
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -16,16 +18,37 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude 'org/apache/http/version.properties'
+        exclude 'org/apache/http/client/version.properties'
+    }
+
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:multidex:1.0.0'
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     testImplementation 'junit:junit:4.12'
     implementation 'com.android.support:cardview-v7:28.0.0'
     implementation 'com.android.support:design:28.0.0'
-    implementation "com.google.code.gson:gson:2.8.2"
+    implementation 'com.google.code.gson:gson:2.8.2'
     implementation 'com.android.volley:volley:1.1.0'
     implementation 'com.android.support:cardview-v7:28.0.0'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
@@ -38,4 +61,41 @@ dependencies {
     implementation 'com.itextpdf:itextg:5.5.9'
     implementation 'com.github.dimorinny:floating-text-button:0.0.4'
     implementation project(':adprogressbarlib')
+    implementation 'com.hbb20:ccp:2.0.0'
+    implementation 'com.weiwangcn.betterspinner:library-material:1.1.0'
+    implementation 'com.weiwangcn.betterspinner:library:1.1.0'
+    implementation 'com.github.dimorinny:floating-text-button:0.0.4'
+    implementation project(':signature-pad')
+    implementation project(':timelineview')
+    implementation 'com.github.angads25:toggle:1.1.0'
+    implementation('com.google.android.gms:play-services-maps:11.0.4') {
+        exclude group: 'com.android.support'
+    }
+    implementation('com.google.android.gms:play-services-location:11.0.4') {
+        exclude group: 'com.android.support'
+    }
+    implementation project(':android-reactive-location')
+    implementation project(':library-utills')
+    implementation files('libs/httpclient-4.3.6.jar')
+    implementation files('libs/httpcore-4.3.3.jar')
+    implementation files('libs/httpmime-4.3.6.jar')
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation project(':library-circleimg')
+    implementation 'com.github.Deishelon:RoundedBottomSheet:1.0.1'
+    implementation project(':photoview')
+    implementation project(':exoplayerview')
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation ('com.google.android.gms:play-services-vision:11.0.4') {
+        exclude group: 'com.android.support'
+    }
+
+    // vision barcode scanner
+    implementation 'info.androidhive:barcode-reader:1.1.5'
+    //videoplay
+    implementation 'com.github.HamidrezaAmz:MagicalExoPlayer:1.0.14'
+//pdf
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+
+
+
 }
